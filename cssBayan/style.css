@@ -1,0 +1,136 @@
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth; 
+}
+
+body {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 900;
+
+  background-color: #F6F6EC;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.tab input {
+  display: none;
+}
+
+svg {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.tab-image {
+  display: block;
+  height: 0;
+  margin-top: 0;
+
+  opacity: 0;
+  overflow: hidden;
+}
+
+.tab {
+  border-top: 1px solid #D2D9E2;
+}
+
+.tab-label {
+  display: block;
+  padding: 20px 0;
+
+  color: #0059D9;
+  
+  cursor: pointer;
+
+  transition: 0.1s color ease-in;
+}
+
+input[type="radio"]:checked ~ label {
+  color: #000;
+}
+
+.tab-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-text {
+  display: block;
+
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.tab-image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+:checked ~ label > img {
+  height: 100%;
+  margin-top: 20px;
+
+  overflow: visible;
+  opacity: 1;
+  
+  transition: 0.3s all ease-in;
+}
+
+:hover ~ label > img  {
+  height: 100%;
+  margin-top: 20px;
+
+  overflow: visible;
+  opacity: 1;
+
+  transition: 0.3s all ease-in;
+}
+
+.container:hover svg{
+  display: block;
+}
+
+input[type="radio"]:checked ~ label svg {
+  transform: rotate(45deg);
+}
+
+label:hover div > svg {
+  transform: rotate(45deg);
+}
+
+.container:hover input[type="radio"] ~ label {
+  color: #000;
+
+  transition: 0.1s color ease-in;
+}
+
+.tab-label:active .tab-text {
+  color: #0059D9;
+  
+  opacity: .7;
+
+  transition: 0.3s all ease-in;
+}
+
+.tab-label:active svg {
+  fill: #0059D9;
+  
+  opacity: .7;
+
+  transition: 0.3s all ease-in;
+}
+
+.tab-label:active img {
+  opacity: .7;
+}
+
+
+
