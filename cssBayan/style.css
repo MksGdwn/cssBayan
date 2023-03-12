@@ -1,6 +1,4 @@
 html {
-  width: 100vw;
-  overflow-x: hidden;
   scroll-behavior: smooth; 
 }
 
@@ -110,6 +108,11 @@ input[type="radio"]:checked ~ label svg {
 }
 
 @media (min-width: 1920px) {
+  html {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
   .page-title {
     font-size: 2.5em;
     line-height: 1em;
