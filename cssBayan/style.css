@@ -10,8 +10,8 @@ body {
 
   color: #000;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 1em;
+  line-height: 1em;
   font-weight: 900;
 
   background-color: #F6F6EC;
@@ -22,10 +22,10 @@ body {
 }
 
 .page-title {
-  padding: 5px 10px;
+  padding: .2em .5em;
 
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5em;
+  line-height: 1em;
   font-weight: 900;
 }
 
@@ -40,21 +40,21 @@ body {
 .tab-header {
   display: flex;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: .25em .75em;
 }
 
 .tab-label {
   display: block;
-  padding: 20px 0;
+  padding: 1em 0;
 
-  transition: 0.2s color ease-in;
+  transition: .2s color ease-in;
 }
   
 .tab svg {
-  width: 20px;
-  height: 20px;
+  width: 1.25em;
+  height: 1.25em;
 
-  transition: 0.2s all ease-in;
+  transition: .2s all ease-in;
 }
 
 .tab-image {
@@ -66,23 +66,21 @@ body {
   opacity: 0;
   overflow: hidden;
   
-  transition: 0.2s all ease-in;
+  transition: .2s all ease-in;
 }
 
 .tab-text {
   display: block;
-
-  font-size: 14px;
 }
 
 :checked ~ label > img {
   height: 100%;
-  margin-top: 20px;
+  margin-top: 1.25em;
 
   opacity: 1;
   overflow: visible;
   
-  transition: 0.2s all ease-in;
+  transition: .2s all ease-in;
 }
 
 input[type="radio"]:checked ~ label svg {
@@ -96,12 +94,13 @@ input[type="radio"]:checked ~ label svg {
   }
 
   .page-title {
-    font-size: 32px;
-    line-height: 32px;
+    font-size: 2em;
+    line-height: 1em;
   }
 
-  .tab-text {
-    font-size: 18px;
+  .tab-header {
+    font-size: 1.25em;
+    line-height: 1em;
   }
 
   .tab-image {
@@ -112,12 +111,20 @@ input[type="radio"]:checked ~ label svg {
 
 @media (min-width: 1920px) {
   .page-title {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 2.5em;
+    line-height: 1em;
   }
 
-  .tab-text {
-    font-size: 22px;
+  .tab-header {
+    font-size: 1.5em;
+    line-height: 1em;
+  }
+
+  .tab svg {
+    width: 1em;
+    height: 1em;
+  
+    transition: .2s all ease-in;
   }
 
   .tab-image {
@@ -141,37 +148,37 @@ input[type="radio"]:checked ~ label svg {
   
   :hover ~ label > img  {
     height: 100%;
-    margin-top: 20px;
+    margin-top: 1.25em;
   
     opacity: 1;
     overflow: visible;
   
-    transition: 0.2s all ease-in;
+    transition: .2s all ease-in;
   }
   
   .container:hover svg{
     opacity: 1;
     overflow: visible;
   
-    transition: 0.2s all ease-in;
+    transition: .2s all ease-in;
   }
   
   input[type="radio"]:checked ~ label svg {
     transform: rotate(45deg);
 
-    transition: 0.2s all ease-in;
+    transition: .2s all ease-in;
   }
   
   label:hover svg {
     transform: rotate(45deg);
 
-    transition: 0.2s all ease-in;
+    transition: .2s all ease-in;
   }
   
   .container:hover input[type="radio"] ~ label {
     color: #000;
   
-    transition: 0.2s color ease-in;
+    transition: .2s color ease-in;
   }
   
   .tab-label:active .tab-text {
@@ -179,7 +186,7 @@ input[type="radio"]:checked ~ label svg {
     
     opacity: .7;
   
-    transition: 0.2s all ease-in;
+    transition: .2s all ease-in;
   }
   
   .tab-label:active svg {
@@ -187,7 +194,7 @@ input[type="radio"]:checked ~ label svg {
     
     opacity: .7;
   
-    transition: 0.2s all ease-in;
+    transition: .2s all ease-in;
   }
   
   .tab-label:active img {
